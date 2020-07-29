@@ -5,6 +5,11 @@
 # Terraform code. If you create a variable with no default, the user will be
 # prompted to enter it (or define it via config file or command line flags.)
 
+variable "instance_count" {
+  description = "number of hashicat instances to create"
+  default     = 3
+}
+
 variable "prefix" {
   description = "This prefix will be included in the name of most resources."
 }
@@ -26,7 +31,7 @@ variable "subnet_prefix" {
 
 variable "instance_type" {
   description = "Specifies the AWS instance type."
-  default     = "t2.micro"
+  default     = "t3.micro"
 }
 
 variable "admin_username" {
