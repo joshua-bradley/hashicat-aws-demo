@@ -5,7 +5,7 @@ terraform {
     organization = "jb-io"
 
     workspaces {
-      name = "hashicat-aws"
+      name = "hashicat-aws-demo"
     }
   }
 }
